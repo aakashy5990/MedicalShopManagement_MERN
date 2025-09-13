@@ -1,5 +1,6 @@
 import React from 'react'
 import  { Route, Routes } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 import Home from './pages/Home'
 import Login from './components/admin/Login'
 import Layout from './pages/admin/Layout'
@@ -14,7 +15,8 @@ const App = () => {
 
   const token = 'wew38sh8hf84hf84h4' 
   return (
-    <div>
+    <>
+      <Toaster/>
       <Routes>
         <Route path='/' element={ <Home/> }></Route>
         <Route path='/admin' element={token ? <Layout/> : <Login/>}>
@@ -26,7 +28,7 @@ const App = () => {
           <Route path='purchase' element={<Purchase />} />
         </Route>
       </Routes>
-    </div>
+    </>
   )
 }
 
