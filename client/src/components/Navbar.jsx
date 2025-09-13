@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAppContext } from '../context/AppContext'
-import Popup from './Popup'
+import Popup from './PoPUp'
 import { dealers, medicines, employees, customer, purchase } from '../assets/assets'
 import { Link } from 'react-router-dom'
 
