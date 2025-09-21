@@ -17,7 +17,7 @@ const Layout = () => {
     <>
     <div className='flex items-center justify-between py-4 h-[80px] px-4 sm:px-12 border-b border-gray-200 bg-white shadow-sm'>
       <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
-        <img src="/fvc.svg" alt="logo" className='w-10 h-10' />
+        <img src="/fevicon.png" alt="logo" className='w-10 h-10' />
         <div>
           <h1 className="text-xl font-bold text-gray-800">Quick Medi</h1>
           <p className="text-sm text-gray-500">Management System</p>

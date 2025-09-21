@@ -10,6 +10,8 @@ import Medicine from './pages/admin/Medicine'
 import Employee from './pages/admin/Employe'
 import Customer from './pages/admin/Customer'
 import Purchase from './pages/admin/Purchase'
+import AddDealer from './pages/admin/AddDealer'
+import AddMedicine from './pages/admin/AddMedicine'
 
 const App = () => {
 
@@ -22,7 +24,9 @@ const App = () => {
         <Route path='/admin' element={token ? <Layout/> : <Login/>}>
           <Route index element={<Dashboard />} />
           <Route path='dealer' element={<Dealer />} />
+          <Route path='add-dealer' element={<AddDealer />} />
           <Route path='medicine' element={<Medicine />} />
+          <Route path='add-medicine' element={<AddMedicine />} />
           <Route path='employee' element={<Employee />} />
           <Route path='customer' element={<Customer />} />
           <Route path='purchase' element={<Purchase />} />
